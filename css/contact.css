@@ -12,7 +12,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Popping';
-    /* background-color: #ccc; */
 }
 
 body {
@@ -61,18 +60,74 @@ body {
     height: 100%;
 }
 
-.checked {
-    color: orange;
+
+
+
+
+/* ///////////////////////////////////////////////// */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color:black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:10PX;
+    margin-left: 5px;
+  }
+#num-ra {
+    margin-right: 10px;
 }
 
-.rating-name {
+#rat-num {
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.progres {
     display: flex;
-    flex-direction: row-reverse;
-    margin-right: 65rem;
+    flex-direction: row;
 }
-#com {
-    margin-left: 6rem;
+
+.colom {
+    /* background-color: azure; */
+    display: flex;
+    flex-direction: row;
 }
+#pro-g {
+    width: 20rem;
+    /* margin-left: 50px; */
+    
+}
+.ev {
+    display: flex;
+    flex-direction: row;
+}
+
+.all-colom {
+    margin-left: 20px;
+}
+
+#rev-num {
+    margin-left: 10px;
+}
+
+.comment {
+    margin-left: 60px;
+}
+
+/* ////////////////////////////////////////  */
+
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* //////////////////////////////////////// */
+
 .contact-section .map {
   width: 40%;
   height: auto;
