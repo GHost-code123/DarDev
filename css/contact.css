@@ -12,15 +12,27 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Popping';
+<<<<<<< HEAD
 }
 
 body {
   /* background: #D9B280; */
+=======
+    /* background-color: #ccc; */
+}
+
+body {
+  background: #D9B280;
+>>>>>>> 5c1a665a159b6cfdbb689371f7ec510debcd55a9
   font-family: "Roboto", sans-serif;
 }
 
 .con-container {
+<<<<<<< HEAD
   /* background: #FFFFFF; */
+=======
+  background: #FFFFFF;
+>>>>>>> 5c1a665a159b6cfdbb689371f7ec510debcd55a9
   width: 900px;
   height: 650px;
   margin: 5% auto;
@@ -60,6 +72,7 @@ body {
     height: 100%;
 }
 
+<<<<<<< HEAD
 /* ////////////////////////// */
 
 
@@ -181,6 +194,20 @@ body {
 
 /* //////////////////////////////////////// */
 
+=======
+.checked {
+    color: orange;
+}
+
+.rating-name {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 65rem;
+}
+#com {
+    margin-left: 6rem;
+}
+>>>>>>> 5c1a665a159b6cfdbb689371f7ec510debcd55a9
 .contact-section .map {
   width: 40%;
   height: auto;
