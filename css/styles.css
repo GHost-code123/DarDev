@@ -1,18 +1,52 @@
+@import url('https://fonts.cdnfonts.com/css/arimo?styles=14701');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Popping';
+    font-family: 'Poppins', sans-serif;
 }
 
-.navbar .nav-link, 
-.navbar .btn {
-    color: white;
+a {
+	text-decoration: none;
 }
 
-.navbar .my-logo-text {
-    color: black;
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1.3rem 2%;
+	background: rgba(0, 0, 0, .1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
 }
+
+#logo {
+	font-size: 2rem;
+	color: white;
+	font-family: "Arimo";
+	font-weight: 700;
+}
+
+#logo-img {
+	position: relative;
+	/* left: 10px; */
+	width: 100px;
+	height: 10px;
+}
+
+.navbar a {
+	font-size: 1.15rem;
+	color: #fff;
+	font-weight: 500;
+	margin-left: 2.5rem;
+}
+
+
 
 
 .home-container {
