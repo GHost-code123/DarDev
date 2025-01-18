@@ -46,8 +46,9 @@
             </nav>
         </header>
         <main>
-            <div class="container my-5 py-5">
-                <div class="row align-items-center">
+            <div class="top-container">
+                <!-- my-5 py-5 -->
+                <div id="row1" class="row align-items-center">
                     <!-- le texte -->
                     <div class="col-md-4">
                         <h2>À propos de Dar Dev</h2>
@@ -63,50 +64,139 @@
                         <img src="images/à propos.jpg" alt="Dar Dev Team">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
+                <div id="row2" class="row align-items-start top-container">
+                    <div id="r1" class="card">
                         <h4>Notre mission :</h4>
-                        <p>Transformer vos idées en réalité grâce à une équipe passionnée et compétente.</p>
+                        <div class="values-container d-flex align-items-start">
+                            <img src="images/mission.jpg" class="card-img" alt="Mission">
+                            <p>Transformer vos idées en réalité grâce à une équipe passionnée et compétente.</p>
+                        </div>
                     </div>
-                    <div class="col-md-4">
+                    <div id="r2" class="card" style="display: none">
                         <h4>Notre vision :</h4>
-                        <p> Faire de Dar Dev une référence dans l'innovation numérique et l'agilité logicielle.</p>
+                        <div class="values-container d-flex align-items-start">
+                            <img src="images/vision.jpg" class="card-img" alt="Vision">
+                            <p>Faire de Dar Dev une référence dans l'innovation numérique et l'agilité logicielle.</p>
+                        </div>
                     </div>
-                    <div class="col-md-4">
+                    <div id="r3" class="card" style="display: none">
                         <h4>Valeurs principales :</h4>
-                        <p><strong>Innovation : </strong>Toujours chercher à dépasser les attentes avec des solutions
-                            créatives.</p>
-                        <p>
-                            <strog>Excellence :</strog> Offrir des résultats de haute qualité à chaque étape.
-                        </p>
-                        <p><strong>Collaboration : </strong>Travailler main dans la main avec nos clients et en équipe.
-                        </p>
-                        <p><strong>Engagement :</strong> Respecter nos délais et garantir la satisfaction.</p>
+                        <div class="values-container d-flex align-items-start">
+                            <img src="images/value.jpg" class="card-img" alt="Valeurs">
+                            <p><strong>Innovation :</strong> Toujours chercher à dépasser les attentes avec des solutions créatives.</p>
+                            <p><strong>Excellence :</strong> Offrir des résultats de haute qualité à chaque étape.</p>
+                            <p><strong>Collaboration :</strong> Travailler main dans la main avec nos clients et en équipe.</p>
+                            <p><strong>Engagement :</strong> Respecter nos délais et garantir la satisfaction.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="row member">
+                
+                <div id="members" class="row g-4">
+                    <div class="col-md-3">
+                        <div class="card" data-aos="zoom-in-up">
+                            <h4 class="card-title">Chef de projet</h4>
+                            <img src="images/profile_abdelkrim.webp" class="card-img-top" data-aos="zoom-in"
+                                alt="Chef de projet">
+                            <div class="card-body">
+                                <h4 class="card-nom">Abdelkrim El Jamiy</h4>
+                                <p class="card-text">Pilote de la réussite des projets, il orchestre l'équipe avec
+                                    efficacité et veille à ce que chaque étape soit réalisée selon les attentes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" data-aos="zoom-in-up">
+                            <h4 class="card-title">Développeur front-end</h4>
+                            <img src="images/mehdi.webp" class="card-img-top" data-aos="zoom-in"
+                                alt="Développeur front-end">
+                            <div class="card-body">
+                                <h4 class="card-nom">Elmahdi Elhasni</h4>
+                                <p class="card-text">Spécialiste des interfaces utilisateur modernes et interactives, il
+                                    transforme les maquettes en expériences fluides et engageantes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" data-aos="zoom-in-up">
+                            <h4 class="card-title">Développeur back-end</h4>
+                            <img src="images/aymen.webp" class="card-img-top" data-aos="zoom-in"
+                                alt="Développeur  back-end">
+                            <div class="card-body">
+                                <h4 class="card-nom">Aymane elkhdraoui</h4>
+                                <p class="card-text">Expert en architecture serveur et gestion de données, il garantit
+                                    des performances optimales et une sécurité robuste.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" data-aos="zoom-in-up">
+                            <h4 class="card-title">Designer</h4>
+                            <img src="images/chamai.webp" class="card-img-top" data-aos="zoom-in" alt="Designer">
+                            <div class="card-body">
+                                <h4 class="card-nom">Chaima Lakhmaiss</h4>
+                                <p class="card-text">Créarice de designs élégants et fonctionnels, elle s'assure que
+                                    chaque interaction est intuitive et esthétique.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container my-5">
+                    <h2 class="text-center fw-bold">NOTRE HISTOIRE</h2>
+                    <p class="text-center text-muted">Une timeline interactive ou statique pour présenter les moments
+                        clés de la start-up :</p>
+                    <div class="timeline">
+                        <!-- 2020 -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <span id="color1" class="circle" data-aos="zoom-in">2020</span>
+                            <div class="content" data-aos="fade-left">
+                                <h4>L’idée de Dar Dev</h4>
+                                <p>Création du concept initial par un groupe de passionnés en technologie.</p>
+                            </div>
+                        </div>
+                        <!-- 2021 -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <span id="color2" class="circle" data-aos="zoom-in">2021</span>
+                            <div class="content" data-aos="fade-right">
+                                <h4>Fondation officielle de Dar Dev</h4>
+                                <p>Lancement officiel en tant que start-up.</p>
+                            </div>
+                        </div>
+                        <!-- 2022 -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <span id="color3" class="circle" data-aos="zoom-in">2022</span>
+                            <div class="content" data-aos="fade-left">
+                                <h4>Croissance et grands projets</h4>
+                                <p>Collaboration avec des clients internationaux.</p>
+                            </div>
+                        </div>
+                        <!-- 2023 -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <span id="color4" class="circle" data-aos="zoom-in">2023</span>
+                            <div class="content" data-aos="fade-right">
+                                <h4>Élargissement de l'équipe</h4>
+                                <p>Recrutement de nouveaux talents.</p>
+                            </div>
+                        </div>
+                        <!-- 2024 -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <span id="color5" class="circle" data-aos="zoom-in">2024</span>
+                            <div class="content" data-aos="fade-left">
+                                <h4>Réalisation de projets d'envergure</h4>
+                                <p>Participation à des projets ambitieux pour des clients majeurs.</p>
+                            </div>
+                        </div>
+                        <!-- 2025 -->
+                        <div class="timeline-item" data-aos="fade-up">
+                            <span id="color6" class="circle" data-aos="zoom-in">2025</span>
+                            <div class="content" data-aos="fade-right">
+                                <h4>Consolidation et nouvelles ambitions</h4>
+                                <p>Lancement d’un produit interne innovant.</p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-
-
-
-
-
-
-
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
         </main>
         <!-- <footer> -->
         <footer class="text-center text-lg-start bg-body-tertiary text-muted">
