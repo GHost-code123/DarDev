@@ -53,6 +53,18 @@
     }
   }
 
+  .whyus-cards {
+    display: flex;
+    justify-content: space-around;
+    outline: 0 !important;
+    margin-top: 30px;
+  }
+  .card {
+  }
+  
+
+
+
   footer {
     margin-top: 2rem;
     width: 100%;
