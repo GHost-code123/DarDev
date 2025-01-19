@@ -8,24 +8,6 @@ body {
     padding-left: 20px;
     padding-right: 20px;
 }
-.navbar {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    
-}
-
-.navbar .nav-link {
-    font-size: 1rem; 
-    font-weight: 500; 
-    color: #333;
-    margin-right: 15px; 
-    transition: color 0.3s ease;
-}
-
-.navbar .nav-link:hover {
-    color:  #456594
-}
-
-
 
 .top-container {
     min-height: 90vh; 
