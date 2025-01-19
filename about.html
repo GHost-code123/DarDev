@@ -15,71 +15,71 @@
 </head>
 
 <body>
-    <div class="home-container">
+    
         <header>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a href="index.html" class="btn d-flex align-items-center">
-                        <img src="images/logo_DD.webp" alt="Logo" width="40" height="40" class="my-logo-image">
-                        <span class="my-logo-text fs-3">Dar Dev</span>
-                    </a>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <!-- Logo ou Titre -->
+                    <a class="navbar-brand" href="index.html">Dar Dev</a>
+            
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <!-- Liens de navigation -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto"> 
                             <li class="nav-item">
-                                <a class="nav-link" href="#nous">Pourquoi nous</a>
+                                <a class="nav-link" href="index.html">Pourquoi-nous</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#Nos services">Nos services</a>
+                                <a class="nav-link active" href="about.html">À propos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#Nos projets">Nos projets</a>
+                                <a class="nav-link" href="services.html">Nos services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#À propos">À propos</a>
+                                <a class="nav-link" href="work.html">Nos projets</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-dark" href="#" role="button">Contactez-nous</a>
+								<a class="btn btn-dark" href="contact.html" role="button">Contactez-nous</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            
         </header>
         <main>
             <div class="top-container">
-                <!-- my-5 py-5 -->
-                <div id="row1" class="row align-items-center">
-                    <!-- le texte -->
-                    <div class="col-md-4">
-                        <h2>À propos de Dar Dev</h2>
-                        <p>
-                            Dar Dev est une maison de développement logiciel dédiée à la création de solutions
-                            numériques innovantes.
-                        </p>
+                <div class="content">
+                    <h1>À propos de Dar Dev</h1>
+                    <p>
+                        Dar Dev est une maison de développement logiciel dédiée à la création de solutions
+                        numériques innovantes.</p>
                         <button class="btn btn-secondary">Contactez-nous!</button>
-                    </div>
 
-                    <!-- l'image -->
-                    <div class="col-md-8">
-                        <img src="images/à propos.jpg" alt="Dar Dev Team">
-                    </div>
                 </div>
+            </div>
+  
+            <div class="home-container">
+            
                 <div id="row2" class="row align-items-start top-container">
-                    <div id="r1" class="card">
+                    <div id="c1" class="card" data-aos="fade-up" data-aos-delay="0">
                         <h4>Notre mission :</h4>
                         <div class="values-container d-flex align-items-start">
                             <img src="images/mission.jpg" class="card-img" alt="Mission">
                             <p>Transformer vos idées en réalité grâce à une équipe passionnée et compétente.</p>
                         </div>
                     </div>
-                    <div id="r2" class="card" style="display: none">
+                    <div id="c2" class="card" data-aos="fade-up" data-aos-delay="200">
                         <h4>Notre vision :</h4>
                         <div class="values-container d-flex align-items-start">
                             <img src="images/vision.jpg" class="card-img" alt="Vision">
                             <p>Faire de Dar Dev une référence dans l'innovation numérique et l'agilité logicielle.</p>
                         </div>
                     </div>
-                    <div id="r3" class="card" style="display: none">
+                    <div id="c3" class="card" data-aos="fade-up" data-aos-delay="400">
                         <h4>Valeurs principales :</h4>
                         <div class="values-container d-flex align-items-start">
                             <img src="images/value.jpg" class="card-img" alt="Valeurs">
@@ -90,7 +90,7 @@
                         </div>
                     </div>
                 </div>
-                
+            </div>  
                 <div id="members" class="row g-4">
                     <div class="col-md-3">
                         <div class="card" data-aos="zoom-in-up">

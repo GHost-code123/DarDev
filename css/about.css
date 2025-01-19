@@ -1,196 +1,321 @@
-.navbar .nav-link,
-.navbar .btn {
-    color: white;
+/* Global Styles */
+body {
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
-.navbar .my-logo-text {
-    color: white;
-}
-
 .navbar {
-    background-color: gray;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-.top-container #row1{
-    background-color: #424040;
-    color: #fff;
+.navbar .nav-link {
+    font-size: 1rem; 
+    font-weight: 500; 
+    color: #333;
+    margin-right: 15px; 
+    transition: color 0.3s ease;
 }
 
-#row2 {
-    display: flex;
-    flex-direction: row; 
-    gap: 10px;
-    color: #fff;
-    width: 100%; 
-}
-
-
-.card {
-    width: 10%; 
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 0px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
-    position: relative;
+.navbar .nav-link:hover {
+    color:  #cc5b5b 
 }
 
 
-#r1 {
-    transform: translateY(0px); 
-    transform: translatex();
-}
-#r2 {
-    transform: translateY(30px); 
-}
-#r3 {
-    transform: translateY(60px); 
-}
 
-
-.card-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 8px;
-    object-fit: cover;
-    margin-right: 20px; 
-}
-
-
-.values-container {
+.top-container {
+    min-height: 90vh; 
     display: flex;
     align-items: center;
-    gap: 15px;
-}
-
-.values-container p {
-    margin: 0;
-    line-height: 1.6;
-    font-size: 1rem;
-    color: #fff;
-}
-
-h4 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    color: #fff;
-}
-
-
-.timeline {
+    justify-content: center;
+    text-align: center;
     position: relative;
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    padding: 20px;
 }
 
-.timeline-item {
-    position: relative;
-    margin: 0 10px;
+.top-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.top-container .content {
+    background-color: linear-gradient(135deg, #f63b3b5f, #cc5b5b);
+    position: relative; 
+    color: rgb(0, 0, 0); 
+    max-width: 800px;
+}
+
+.top-container .content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.top-container .content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/* Section Row2 */
+#row2 {
+    background-color: #fff;
+    margin-top: 30px;
+    display: grid;
+    grid-template-areas: 
+        "mission"
+        "vision"
+        "values";
+    grid-gap: 20px;
+    align-items: start;
+    justify-items: center;
+    margin-bottom: 50px ;
+}
+
+#row2 .card {
+    background: linear-gradient(135deg, #111, #cc5b5b);
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    transform: scale(0.95);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    height: 250px;
+    width: 80%;
+    font-size:x-large;
     text-align: center;
 }
 
-.timeline-item #color1 {
-    background: #014ba0;
-    width: 60px;
-    height: 60px;
+#row2 .card:hover {
+    transform: scale(1);
+}
+
+#row2 .card h4 {
+    margin-bottom: 10px;
+}
+#row2 .card strong{
+    color: gray;
+}
+
+#row2 .values-container {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+}
+
+#row2 .card-img {
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    color: #fff;
-    font-size: 18px;
+    object-fit: cover;
+}
+
+/* Grid positioning for stair effect */
+.card:nth-child(1) {
+    grid-area: mission;
+    align-self: start;
+    justify-self: start;
+}
+
+.card:nth-child(2) {
+    grid-area: vision;
+    align-self: center;
+    justify-self: center;
+}
+
+.card:nth-child(3) {
+    grid-area: values;
+    align-self: end;
+    justify-self: end;
+}
+
+
+
+
+
+/* Team Members */
+#members {
+    margin-top: 60px;
+    padding: 60px 0;
+}
+
+#members .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Uniform card size */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    font-weight: bold;
+    flex-direction: column;
+    padding: 20px;
 }
 
-.timeline-item #color2 {
-    background: #0a5cb8;
-    width: 60px;
-    height: 60px;
+#members .card:hover {
+    transform: scale(1.05);
+}
+
+#members .card .card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+#members .card img {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    color: #fff;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.timeline-item #color3 {
-    background: #1466c3;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 10px;
+#members .card .card-nom {
+    font-size: 22px;
     font-weight: bold;
+    color: #333;
 }
 
-.timeline-item #color4 {
-    background: #2174d4;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.timeline-item #color5 {
-    background: #3b8eed;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.timeline-item #color6 {
-    background: #318ce7;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.timeline-item .content h4 {
+#members .card .card-text {
     font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+}
+
+/* Timeline */
+.timeline {
+    margin-top: 60px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-item .circle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #FF6B6B;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.timeline-item .content p {
-    font-size: 14px;
-    color: #000000;
+.timeline-item .circle:hover {
+    background-color: #FF4C4C;
 }
 
+.timeline-item .content {
+    padding-left: 70px;
+    border-left: 3px solid #FF6B6B;
+    padding-bottom: 20px;
+}
+
+.timeline-item h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.timeline-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #777;
+}
+
+/* Footer */
 footer {
-    margin-top: 2rem;
-    width: 100%;
+    background-color: #fff;
+    padding: 40px 0;
+    color: #333;
+    margin-top: 60px;
+    border-top: 2px solid #f0f0f0;
+}
+
+footer a {
+    color: #333;
+}
+
+footer a:hover {
+    color: #555;
+}
+
+footer .social-icons a {
+    font-size: 24px;
+    color: #333;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #777;
+}
+
+/* Footer Links */
+footer .container .row .col-md-2 a {
+    color: #555;
+    font-size: 16px;
+    display: block;
+    margin: 15px 0;
+}
+
+footer .container .row .col-md-2 a:hover {
+    color: #777;
+}
+
+footer .text-center {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .home-container .card .values-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #members .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #members .card img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .timeline-item .circle {
+        left: unset;
+        margin-bottom: 15px;
+    }
+
+    .timeline-item .content {
+        padding-left: 0;
+        border-left: unset;
+    }
 }
