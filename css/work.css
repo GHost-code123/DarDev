@@ -1,0 +1,20 @@
+body {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/our-work.png");
+	background-size: cover;
+}
+
+main section {
+	display: flex;
+	text-align: center;
+	color: white;
+	/* width: 80%;	 */
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+main section p {
+	font-size: 15;
+	/* margin-top: 10%; */
+}
+

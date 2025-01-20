@@ -1,72 +1,109 @@
-
-.navbar .nav-link, 
-.navbar .btn {
-    color: white;
-}
-.navbar .my-logo-text {
-    color: black;
-}
+@import url('https://fonts.cdnfonts.com/css/arimo?styles=14701');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Popping';
-    /* background-color: #ccc; */
-  }
+    font-family: 'Poppins', sans-serif;
+}
 
-  .home-container {
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(0, 0,0,0.4);
-    /* display: flex;
-    align-items: center; */
-    justify-content: center;
-  }
-  
-  .content {
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 100px;
-    text-align: center
-  }
-  
-  /* .content a {
-    font-size: 23px;
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid #fff;
-    border-radius: 50px;
-    transition: 0.3s;
-  }
-   */
-  /* .content a:hover {
-    background-color: #fff;
-    color: black;
-  } */
+body {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/our-work.png");
+	background-size: cover;
+}
 
-  .background-clip {
+a {
+	text-decoration: none;
+}
+
+header {
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1.3rem 2%;
+	background: rgba(0, 0, 0, 0.69);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 100;
+}
+
+#logo {
+	font-size: 2rem;
+	color: white;
+	font-family: "Arimo", sans-serif;
+	font-weight: 700;
+}
+
+#logo-img {
+	width: 80px;
+}
+
+.navbar a {
+	font-size: 1.15rem;
+	color: #fff;
+	font-weight: 500;
+	margin-left: 2.5rem;
+}
+
+#contactus-btn {
+	background-color: #3f4140;
+	border: 1px solid;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.navbar a:hover {
+	color: #585555;
+}
+
+#contactus-btn:hover {
+	color: #030303;
+	background-color: #fff;
+	border: 1px solid rgb(82, 81, 81);
+}
+
+
+.home-container {
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(0, 0, 0, 0.4);
+	justify-content: center;
+}
+  
+.content {
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 100px;
+	text-align: center
+}
+  
+.background-clip {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
-  }
+}
 
-  @media(min-aspect-ratio:16/9) {
+footer {
+	margin-top: 2rem;
+	width: 100%;
+}
+
+@media(min-aspect-ratio:16/9) {
     .background-clip {
-        width: 100%;
-        height: auto;
+		width: 100%;
+		height: auto;
     }
-  }
+}
 
-  @media (max-aspect-ratio:16/9) {
+@media (max-aspect-ratio:16/9) {
     .background-clip {
-        width: auto;
-        height: 100%;
+		width: auto;
+	height: 100%;
     }
-  }
-
-  footer {
-    margin-top: 2rem;
-    width: 100%;
 }
