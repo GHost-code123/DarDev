@@ -1,0 +1,142 @@
+body {
+    background-color: #000000;
+    color: white;
+}
+
+.navbar .nav-link,
+.navbar .btn {
+    color: white;
+}
+
+.navbar .my-logo-text {
+    color: #ffffffab;
+}
+
+.services-header {
+    text-align: center;
+    margin: 50px 20px;
+    padding: 50px 0;
+}
+
+.main-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffffab;
+    margin-bottom: 15px;
+}
+
+.description {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.272), 0 0 10px rgba(0, 0, 0, 0.18);
+    border-radius: 18px;
+    font-size: 18px;
+    color: #ffffffab;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+}
+
+.go-to-pricing-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background 0.3s;
+    margin-bottom: 40px;
+
+        color: #fff;
+        border: #ffffff solid 2px;
+}
+.go-to-pricing-btn:hover {
+background: #ffffff;
+    color: #000000;
+    border: #000000 solid 2px;
+}
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px;
+}
+.pricing-card {
+    color: #1D1917;
+    background: #c5c5ce;
+    background-image: url(/images/services/services.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:  12px;
+    width: 280px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.plan-title {
+    font-size: 24px;
+    color: #1D1917;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.plan-price {
+    font-size: 30px;   
+    color: #007bff;
+    margin: 20px 0;
+}
+
+.plan-features {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+.choose{
+    display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius:  2px 18px;
+        font-size: 16px;
+        transition: background 0.3s;
+        margin-bottom: 40px;
+        color: #fff;
+        border: #000000 solid 2px;
+}
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.background-clip::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+ @media(min-aspect-ratio:16/9) {
+     .background-clip {
+         width: 100%;
+         height: auto;
+     }
+ }
+
+ @media (max-aspect-ratio:16/9) {
+     .background-clip {
+         width: auto;
+         height: 100%;
+     }
+ }
+
+footer {
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+}
